@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8262632C1C5921E8005821E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262632B1C5921E8005821E6 /* AppDelegate.swift */; };
+		826263311C5921E8005821E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8262632F1C5921E8005821E6 /* Main.storyboard */; };
+		826263341C5921E8005821E6 /* VistasJerarqicas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 826263321C5921E8005821E6 /* VistasJerarqicas.xcdatamodeld */; };
+		826263361C5921E8005821E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826263351C5921E8005821E6 /* Assets.xcassets */; };
+		826263391C5921E8005821E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826263371C5921E8005821E6 /* LaunchScreen.storyboard */; };
+		826263411C5924A6005821E6 /* ListaLibrosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826263401C5924A5005821E6 /* ListaLibrosTVC.swift */; };
+		826263431C592B95005821E6 /* LibroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826263421C592B95005821E6 /* LibroVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		826263281C5921E8005821E6 /* VistasJerarqicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistasJerarqicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8262632B1C5921E8005821E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		826263301C5921E8005821E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		826263331C5921E8005821E6 /* VistasJerarqicas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VistasJerarqicas.xcdatamodel; sourceTree = "<group>"; };
+		826263351C5921E8005821E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		826263381C5921E8005821E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8262633A1C5921E8005821E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826263401C5924A5005821E6 /* ListaLibrosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaLibrosTVC.swift; sourceTree = "<group>"; };
+		826263421C592B95005821E6 /* LibroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibroVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		826263251C5921E8005821E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8262631F1C5921E8005821E6 = {
+			isa = PBXGroup;
+			children = (
+				8262632A1C5921E8005821E6 /* VistasJerarqicas */,
+				826263291C5921E8005821E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		826263291C5921E8005821E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				826263281C5921E8005821E6 /* VistasJerarqicas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8262632A1C5921E8005821E6 /* VistasJerarqicas */ = {
+			isa = PBXGroup;
+			children = (
+				8262632B1C5921E8005821E6 /* AppDelegate.swift */,
+				8262632F1C5921E8005821E6 /* Main.storyboard */,
+				826263351C5921E8005821E6 /* Assets.xcassets */,
+				826263371C5921E8005821E6 /* LaunchScreen.storyboard */,
+				8262633A1C5921E8005821E6 /* Info.plist */,
+				826263321C5921E8005821E6 /* VistasJerarqicas.xcdatamodeld */,
+				826263401C5924A5005821E6 /* ListaLibrosTVC.swift */,
+				826263421C592B95005821E6 /* LibroVC.swift */,
+			);
+			path = VistasJerarqicas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		826263271C5921E8005821E6 /* VistasJerarqicas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8262633D1C5921E8005821E6 /* Build configuration list for PBXNativeTarget "VistasJerarqicas" */;
+			buildPhases = (
+				826263241C5921E8005821E6 /* Sources */,
+				826263251C5921E8005821E6 /* Frameworks */,
+				826263261C5921E8005821E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VistasJerarqicas;
+			productName = VistasJerarqicas;
+			productReference = 826263281C5921E8005821E6 /* VistasJerarqicas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		826263201C5921E8005821E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "ai2-upv";
+				TargetAttributes = {
+					826263271C5921E8005821E6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ES5F8E7C9U;
+					};
+				};
+			};
+			buildConfigurationList = 826263231C5921E8005821E6 /* Build configuration list for PBXProject "VistasJerarqicas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8262631F1C5921E8005821E6;
+			productRefGroup = 826263291C5921E8005821E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				826263271C5921E8005821E6 /* VistasJerarqicas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		826263261C5921E8005821E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826263391C5921E8005821E6 /* LaunchScreen.storyboard in Resources */,
+				826263361C5921E8005821E6 /* Assets.xcassets in Resources */,
+				826263311C5921E8005821E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		826263241C5921E8005821E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826263411C5924A6005821E6 /* ListaLibrosTVC.swift in Sources */,
+				826263431C592B95005821E6 /* LibroVC.swift in Sources */,
+				826263341C5921E8005821E6 /* VistasJerarqicas.xcdatamodeld in Sources */,
+				8262632C1C5921E8005821E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8262632F1C5921E8005821E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				826263301C5921E8005821E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		826263371C5921E8005821E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				826263381C5921E8005821E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8262633B1C5921E8005821E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8262633C1C5921E8005821E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8262633E1C5921E8005821E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VistasJerarqicas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.upv.ai2.VistasJerarqicas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8262633F1C5921E8005821E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VistasJerarqicas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.upv.ai2.VistasJerarqicas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		826263231C5921E8005821E6 /* Build configuration list for PBXProject "VistasJerarqicas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8262633B1C5921E8005821E6 /* Debug */,
+				8262633C1C5921E8005821E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8262633D1C5921E8005821E6 /* Build configuration list for PBXNativeTarget "VistasJerarqicas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8262633E1C5921E8005821E6 /* Debug */,
+				8262633F1C5921E8005821E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		826263321C5921E8005821E6 /* VistasJerarqicas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				826263331C5921E8005821E6 /* VistasJerarqicas.xcdatamodel */,
+			);
+			currentVersion = 826263331C5921E8005821E6 /* VistasJerarqicas.xcdatamodel */;
+			path = VistasJerarqicas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 826263201C5921E8005821E6 /* Project object */;
+}

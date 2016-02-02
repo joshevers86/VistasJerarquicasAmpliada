@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A0D0060B754024F7886CCF4AB6DC3D433E2CB632",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "068FBBD9E3850D02029739EDCE316A23C69CFFA7" : 0,
+    "A0D0060B754024F7886CCF4AB6DC3D433E2CB632" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E9697863-D957-4B75-BA8C-4EEF9E809095",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "068FBBD9E3850D02029739EDCE316A23C69CFFA7" : "",
+    "A0D0060B754024F7886CCF4AB6DC3D433E2CB632" : "VistasJerarquicas\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VistasJerarqicas",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VistasJerarqicas.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joshevers86\/Juego-de-memoria.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "068FBBD9E3850D02029739EDCE316A23C69CFFA7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joshevers86\/VistasJerarquicas.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A0D0060B754024F7886CCF4AB6DC3D433E2CB632"
+    }
+  ]
+}
