@@ -74,7 +74,7 @@ class LibroVC: UIViewController, UITextFieldDelegate {
                         self.titulo.text = cr.valueForKey("titulol") as! String
                         cISBN.text! = isbnC
                         self.autores.text = cr.valueForKey("autorl") as! String
-                        portada.image = cr.valueForKey("portadal") as? UIImage
+                        portada.image = UIImage(data: cr.valueForKey("portadal") as! NSData)
                     }
                 }
             }
