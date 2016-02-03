@@ -33,7 +33,8 @@ class LibroVC: UIViewController, UITextFieldDelegate {
         if cIsbn != nil{
             //buscarLibro(cIsbn!)
             print("isbn recibido: \(cIsbn!)")
-            self.cISBN.hidden = true
+            //self.cISBN.hidden = true
+            self.cISBN.userInteractionEnabled = false
             consultarDDBB(cIsbn!)
         }
         
