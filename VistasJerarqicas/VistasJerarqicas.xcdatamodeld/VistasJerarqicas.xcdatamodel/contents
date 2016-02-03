@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Libro" syncable="YES">
+        <attribute name="autorl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isbnl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portadal" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="titulol" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="Libros" entity="Libro"/>
+    <elements>
+        <element name="Libro" positionX="-54" positionY="9" width="128" height="105"/>
+    </elements>
 </model>

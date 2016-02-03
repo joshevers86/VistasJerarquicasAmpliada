@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LibroVC: UIViewController, UITextFieldDelegate {
 
@@ -20,16 +21,22 @@ class LibroVC: UIViewController, UITextFieldDelegate {
     var cIsbn:String? =  nil
     
     
+    var contexto : NSManagedObjectContext? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        self.contexto = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         cISBN.delegate = self
        
         if cIsbn != nil{
-            buscarLibro(cIsbn!)
+            //buscarLibro(cIsbn!)
+            print("isbn recibido: \(cIsbn!)")
             self.cISBN.hidden = true
+            consultarDDBB(cIsbn!)
         }
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,9 +55,45 @@ class LibroVC: UIViewController, UITextFieldDelegate {
     }
     */
     
+    func consultarDDBB (isbn: String){
+        ////con esto sabemos si el elemento ha sido consultado o no realiza es xq la busqueda ya existe
+        let vistaLIBRO = NSEntityDescription.entityForName("Libro", inManagedObjectContext: self.contexto!)
+        let peticion = vistaLIBRO?.managedObjectModel.fetchRequestTemplateForName("Libros")
+        
+        // Explota xq no hay nada en la base de datos
+        do {
+            let consultaRecuperada = try self.contexto!.executeFetchRequest(peticion!)
+            if (consultaRecuperada.count > 0) {
+                
+                var isbnC : String
+                
+                for cr in consultaRecuperada {
+                     isbnC = cr.valueForKey("isbnl") as! String
+                    if (isbnC == isbn) {
+                        self.titulo.text = cr.valueForKey("titulol") as! String
+                        cISBN.text! = isbnC
+                        self.autores.text = cr.valueForKey("autorl") as! String
+                        portada.image = cr.valueForKey("portadal") as? UIImage
+                    }
+                }
+            }
+        }catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+            
+        }
+    
+    
+    
+    }
+    
     func textFieldShouldReturn(cISBN: UITextField) -> Bool {
         
         cISBN.resignFirstResponder()
+        
+        
+        
+        
+        
         buscarLibro(cISBN.text!)
         return true
     }
@@ -94,6 +137,23 @@ class LibroVC: UIViewController, UITextFieldDelegate {
                     //autores
                     var dico4 = dico2.valueForKey("authors") as! [NSDictionary]
                     self.autores.text = dico4.removeAtIndex(0).valueForKey("name")! as! String
+                    
+                    let entidadLibro = NSEntityDescription.insertNewObjectForEntityForName("Libro", inManagedObjectContext: self.contexto!)
+                    //anyadir en la tabla Libro
+                    entidadLibro.setValue(isbn, forKey: "isbnl")
+                    entidadLibro.setValue(self.autores.text, forKey: "autorl")
+                    if portada.image != nil {
+                        entidadLibro.setValue(UIImagePNGRepresentation(portada.image!), forKey: "portadal")
+                    }
+                    entidadLibro.setValue(self.titulo.text, forKey: "titulol")
+                    
+                    //paso de contexto a base de datos
+                    do {
+                        try self.contexto!.save()
+                    }catch let error as NSError  {
+                        print("Could not save \(error), \(error.userInfo)")
+                    }
+                    
                 }else{
                     
                     let alertController = UIAlertController(title: "Error", message: "ISBN introduccido no existe.", preferredStyle: UIAlertControllerStyle.Alert)
